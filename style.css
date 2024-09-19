@@ -1,0 +1,71 @@
+:root{
+
+--cor-fundo: #212121;
+--cor-texto: #FFFFFF;
+--cor-fundo-div: #000;
+--cor-fundo-input: rgb(83, 83, 83);
+}
+
+.white-mode{
+
+--cor-fundo: #c0c0c0;
+--cor-texto: #000000;
+--cor-fundo-div: #ffffff;
+--cor-fundo-input: rgb(207, 205, 205);
+}
+
+
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt;
+background-color: var(--cor-fundo);
+color: var(--cor-texto);
+
+transition: background-color 0.3s, color 0.3s;
+
+}
+
+#tarefas, #criar-tarefas, #editar-tarefas, #excluir-tarefa{
+
+background-color: var(--cor-fundo-div);
+border: 3px gray solid;
+border-radius: 5px;
+max-width: 25%;
+padding: 10px;
+margin-top: 10px;
+
+
+}
+
+input{
+color: var(--cor-texto);
+background-color: var(--cor-fundo-input);
+border: 2px solid;
+border-color: rgb(189, 189, 189);
+border-radius: 3px;
+}
+
+input:focus{
+outline: none;
+border-color: rgb(0, 255, 115);
+
+}
+
+button{
+
+background-color: rgb(22, 112, 148);
+border: none;
+border-radius: 5px;
+padding: 5px;
+color: white;
+
+}
+
+button:hover{
+
+cursor: pointer;
+background-color: rgb(12, 61, 80);
+color: rgb(133, 133, 133);
+
+}

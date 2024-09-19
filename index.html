@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="tarefas">  
+
+    <h1><span id="contador_de_tarefas">0</span> Tarefa(s) Criada(s): </h1>
+    <div id="tarefas_criadas"></div>
+    
+</div>  
+
+<br>
+
+<button onclick="trocar()">Trocar de Tema</button>
+
+<br>
+
+<div id="criar-tarefas">
+
+    <h1>Criar Tarefa</h1>
+
+    <p>Título: </p>
+    <input id="titulo">
+
+    <p>Descrição (opcional):</p>
+    <input id="descricao">
+
+    <p>Data de vencimento (opcional):</p>
+    <input id="vencimento" type="date">
+
+    <p>Status:</p>
+    <input id="status" value="Pedente">
+
+    <br><br>
+
+    <button onclick="criar()">Criar Tarefa</button>
+
+    <br>
+
+</div>
+
+<div id="editar-tarefas">
+
+    <h1>Editar Tarefa</h1>
+    <p>Digite o ID da tarefa que queira editar:</p>
+    <input type="number" id="id_da_tarefa">
+    <br><br>
+    <button onclick="buscar()">Buscar ID</button>
+
+    <div id="editar_tarefas"></div>
+
+    <br><br>
+
+</div>
+
+<div id="excluir-tarefa">
+
+    <h1>Excluir Tarefa</h1>
+    <p>Digite o ID da tarefa que queira deletar:</p>
+    <input type="number" id="id_da_tarefa2">
+    <br><br>
+    <button onclick="buscar2()">Buscar ID</button>
+    <div id="deletar_tarefas"></div>
+
+</div>
+
+<script src="script.js"></script>    
+</body>
+</html>
